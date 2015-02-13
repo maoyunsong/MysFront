@@ -167,7 +167,7 @@ gulp.task('wiredep', function () {
 gulp.task('watch', ['connect', 'serve'], function () {
     var server = $.livereload();
 
-    gulp.watch('/*.html', ['html']);
+    gulp.watch(paths.app + '/*.html', ['html']);
     gulp.watch(paths.app + '/styles/**/*.scss', ['styles']);
     gulp.watch(paths.app + '/scripts/**/*.js', ['scripts']);
     gulp.watch(paths.app + '/images/**/*', ['images']);

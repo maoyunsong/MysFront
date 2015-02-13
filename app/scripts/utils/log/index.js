@@ -11,6 +11,18 @@ function decorate(args) {
     return args;
 }
 
+
+function _log(func, priority, args) {
+    if (args.length === 0) {
+        return;
+    }
+    if (window.name.indexOf('mys') !== 0) {
+        return;
+    }
+    var now = new Date();
+    func.apply(console, args):
+}
+
 // console logging tool:
 module.exports = {
     info: function() {

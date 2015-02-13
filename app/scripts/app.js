@@ -1,6 +1,6 @@
 'use strict';
 
-//var Controller = require('./controller');
+var Controller = require('./controller');
 
 /**
  * Main application, entry point of the app
@@ -11,7 +11,8 @@ var App = function () {
     /**
      * @type {Controller}
      */
-    //this.controller = new Controller(config);
+    this.controller = new Controller();
+
 };
 
 // expose for use in index.js
